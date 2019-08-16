@@ -1,0 +1,29 @@
+﻿item.binocular.name=Távcső
+item.PlasmaGun.name=Plazma fegyver
+
+zoom.in=Nagyítás
+zoom.out=Kicsinyítés
+zoom.reset=Alaphelyzet
+zoom.lock=Folyamatos mód
+zoom.nightvision=Éjszakai mód
+zoom.waypoints=Pozíciók
+zoom.quickInfo=Info
+
+key.categories.binocular=Távcső
+key.zoomIn=Nagyítás
+key.zoomOut=Kicsinyítés
+key.zoomReset=Alaphelyzet
+key.zoomLock=Folyamatos mód
+key.nightVision=Éjszakai mód
+key.wayPoints=Pozíciók
+key.quickInfo=Info
+
+direction.n=Észak
+direction.nw=Északnyugat
+direction.w=Nyugat
+direction.sw=Délnyugat
+direction.s=Dél
+direction.se=Délkelet
+direction.e=Kelet
+direction.ne=Északkelet
+
