@@ -8,6 +8,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
+import net.minecraftforge.fml.common.FMLCommonHandler;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.relauncher.Side;
@@ -100,9 +101,9 @@ public class ZoomKeyHandler
             } 
           } 
         } 
-      } else if (this.bWayPoints && this.tavcso.zoomLocked) {
-        showWayPoints();
-      }
+      } else if (this.bWayPoints && this.tavcso.zoomLocked ) {
+        //showWayPoints(); //TURNED OFF CAUSE OF IMBALANCE, IF WANT TO TURN ON DISCOMMENT ALSO GuiOverlayScreen.java 53rd-120th LINES and HERE 119th LINE
+      }																					   
       else if (this.bQuickInfo) {
         this.tavcso.quickInfo = !this.tavcso.quickInfo;
       } 
@@ -115,7 +116,7 @@ public class ZoomKeyHandler
   }
 
   
-  private void showWayPoints() { this.mc.displayGuiScreen(new GuiOverlayScreen(this.mc)); }
+  //private void showWayPoints() { this.mc.displayGuiScreen(new GuiOverlayScreen(this.mc)); } //TURNED OFF CAUSE OF IMBALANCE, IF WANT TO TURN ON DISCOMMENT ALSO GuiOverlayScreen.java 53rd-120th LINES and HERE 105th LINE
 
   
   private void setZoomLock() {

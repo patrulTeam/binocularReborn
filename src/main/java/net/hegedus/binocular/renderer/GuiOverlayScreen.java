@@ -48,6 +48,9 @@ public class GuiOverlayScreen extends GuiScreen implements GuiList.IGuiList {
   private int iScrollBarX;
   private int iScrollBarY;
   
+  
+  //TURNED OFF CAUSE OF IMBALANCE, IF WANT TO TURN ON DISCOMMENT ALSOZoomKeyHandler.java AT 105th and 119th LINES
+  /*
   public GuiOverlayScreen(Minecraft mc) {
     this.nameList = new ArrayList();
     this.coordList = new ArrayList();
@@ -114,6 +117,7 @@ public class GuiOverlayScreen extends GuiScreen implements GuiList.IGuiList {
     DrawUtils.setResolution(new ScaledResolution(mc));
     DrawUtils.setFontRenderer(this.field_146297_k.fontRenderer);
   }
+  */
   private int iScrollButtonOffset; private int iScrollButtonPrev; private boolean bScrollButtonPressed; private int iScrollListOffset; private int iElementHeight; private int iElementPadding; private int iNameX; private int iNameY; private int iCoordX; private int iCoordY; private int iTxtWidth; private int iTxtHeight; private int iBtWidth; private int iBtHeight; private int iBtCoordTop; private int iBtCoord1Left; private int iBtCoord2Left; private int iBtCoordWidth; private int iBtCoordHeight; private int iTxtCoordWidth; private int iBtCoord1Bg; private int iBtCoord2Bg; private int iBtX; private int iBtY; private GuiTextField activeTextField;
   private String getPos(int iType) {
     DecimalFormatSymbols decimalSymbol = new DecimalFormatSymbols(Locale.getDefault());

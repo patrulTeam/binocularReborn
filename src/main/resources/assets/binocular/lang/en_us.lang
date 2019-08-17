@@ -6,8 +6,8 @@ zoom.out=Zoom Out
 zoom.reset=Zoom Reset
 zoom.lock=Zoom Lock
 zoom.nightvision=Night Vision
-zoom.waypoints=Waypoints
-zoom.quickInfo=Quick info
+zoom.waypoints= 
+zoom.quickInfo= 
 
 key.categories.binocular=Binocular
 key.nightVision=Night Vision
@@ -15,8 +15,8 @@ key.zoomIn=Zoom In
 key.zoomOut=Zoom Out
 key.zoomReset=Zoom Reset
 key.zoomLock=Zoom Lock
-key.wayPoints=Waypoints
-key.quickInfo=Quick info
+key.wayPoints= 
+key.quickInfo= 
 
 direction.n=North
 direction.nw=North West

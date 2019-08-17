@@ -464,7 +464,7 @@ public class GuiOverlay
           EntityLiving entity = GetEntityLookAt(this.mc, 1000);
           if (entity != null) {
             sElementPos = String.format("x:%s, y:%s, z:%s", new Object[] { dfPos.format(entity.posX), dfPos.format(entity.posY), dfPos.format(entity.posZ) });
-            sElementInfo = " �7(�a" + Integer.toString((int)entity.getMaxHealth()) + "�7" + "/" + "�a" + Integer.toString((int)entity.getHealth()) + "�7" + ")" + "�f";
+            sElementInfo = "(" + Integer.toString((int)entity.getMaxHealth()) + "/" + Integer.toString((int)entity.getHealth()) + ")";
             
             sElementName = entity.toString();
             if (sElementName.indexOf("['") > -1) {
@@ -611,10 +611,10 @@ public class GuiOverlay
         sInfo = sInfo + ", " + sCompass;
       }
       if (sElementName != "") {
-        sInfo = sInfo + ", �e" + sElementName + "�f";
+        sInfo = sInfo + ", &e" + sElementName + "&f";
       }
       if (sElementPos != "") {
-        sInfo = sInfo + "�7 [�f" + sElementPos + "�7" + "]" + "�f";
+        sInfo = sInfo + "&7 [&f" + sElementPos + "&7" + "]" + "&f";
       }
       if (sDistance != "") {
         sInfo = sInfo + " " + sDistance;
@@ -628,8 +628,8 @@ public class GuiOverlay
       scaledText(I18n.translateToLocal("zoom.reset") + ": R", 0.75F, 10, 30, Color.white.getRGB());
       scaledText(I18n.translateToLocal("zoom.lock") + ": L", 0.75F, 10, 40, Color.white.getRGB());
       scaledText(I18n.translateToLocal("zoom.nightvision") + ": N", 0.75F, 10, 50, Color.white.getRGB());
-      scaledText(I18n.translateToLocal("zoom.waypoints") + ": P", 0.75F, 10, 60, Color.white.getRGB());
-      scaledText(I18n.translateToLocal("zoom.quickInfo") + ": I", 0.75F, 10, 70, Color.white.getRGB());
+      scaledText(I18n.translateToLocal("zoom.waypoints") + "   ", 0.75F, 10, 60, Color.white.getRGB());
+      scaledText(I18n.translateToLocal("zoom.quickInfo") + "   ", 0.75F, 10, 70, Color.white.getRGB());
 
       
       scaledText(sPlayerPos, 0.75F, (int)locPosX, (int)locPosY, Color.white.getRGB());
